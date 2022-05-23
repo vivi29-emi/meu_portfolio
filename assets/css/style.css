@@ -1,0 +1,275 @@
+/**Estilização da pag INDEX.html**/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* A propriedade CSS nos permite incluir o padding e o 
+					border na largura e altura total de um elemento */
+
+
+}
+
+:root {
+    --white-glass: #ffffff80;
+    /* Com uma cor branca com 50% de opacidade */
+}
+
+
+
+.container {
+    width: 100vw;
+    /* Define que essa classe ocupa toda a largura da tela do navegado */
+    height: 100vh;
+    /* Define que essa classe ocupa toda a altura da tela do navegado */
+
+    display: flex;
+    /* Define a visualização da classe para Flex*/
+    justify-content: center;
+    /* Centraliza os conteúdos da classe ao seu centro de forma horizontalmente */
+    align-items: center;
+    /* Centraliza os conteúdos da classe ao seu centro de forma verticalmente */
+
+    background-image: url(/assets/img/imgfundo.jpg);
+    /* Define o plano de fundo da classe com uma imagem*/
+    background-size: cover;
+    /* Define o tamanho do plano de fundo, no caso a imagem será mostrada de forma inteira na classe */
+    flex-flow: row wrap;
+}
+
+.tela_index {
+    width: 750px;
+    height: 250px;
+
+    display: flex;
+    justify-content: center;
+    /* Eixo horizontal */
+    align-items: center;
+    /* Eixo Vertical */
+}
+
+.contain_two {
+    /* Define que a Borda da DIV tenha 10px */
+    border: 2px;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+    width: 20%;
+    height: 65%;
+    box-shadow: 0 15px 30px rgba(0, 0, 0);
+    /* Prop. que define um filtro que colocará um blur no fundo da classe */
+    backdrop-filter: blur(8px);
+}
+
+.config_img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+/* cor do Titulo e sub titulo*/
+.titulo {
+    color: #A4ACB1;
+}
+
+.artigos {
+    color: #b7b7b7;
+}
+
+#menu {
+    text-decoration: none;
+}
+
+/* Estiliza o botão quando o curso passa em cima*/
+
+
+a {
+    color: rgba(232, 92, 18, 1);
+    text-decoration: none;
+}
+/* Configurações dos botões*/
+button {
+
+    display: block;
+    margin: 10px auto;
+    height: 40px;
+    width: 180px;
+    border: none;
+    border-radius: 5px;
+    background: rgb(110, 55, 18);
+    background: linear-gradient(90deg, rgba(110, 55, 18, 1) 0%, rgba(164, 68, 16, 0.8664508039543942) 21%, rgba(232, 92, 18, 1) 100%);
+    cursor: pointer;
+}
+
+
+button:hover {
+    opacity: 0.5;
+}
+
+
+
+
+/***Estilização da camada PERFIL***/
+
+
+.container_pf {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(/assets/img/imgfundo.jpg);
+    background-size: cover;
+    flex-flow: row wrap;
+}
+
+
+.tela_pf {
+    width: 750px;
+    height: 250px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#artigos p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    color: #A4ACB1;
+
+}
+
+#artigos h1 {
+
+    font-size: 40px;
+    font-style: italic;
+    color: rgba(232, 92, 18, 1);
+    padding: 3%;
+}
+
+
+#artigos p:hover {
+    font-size: 30px;
+    font-weight: 100%;
+
+
+}
+
+.container_artig:root {
+    --white-glass: #ffffff80;
+}
+
+.container_artig {
+
+    border: 2px;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    padding: 5px;
+    width: 70%;
+    height: 85%;
+    box-shadow: 0 15px 30px rgba(0, 0, 0);
+    backdrop-filter: blur(8px);
+}
+
+/****Estilização da camada CONTATO****/
+
+.container_form:root {
+    --white-glass: #ffffff80;
+}
+
+.container_ctt {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(/assets/img/imgfundo.jpg);
+    background-size: cover;
+    flex-flow: row wrap;
+}
+
+.tela_ctt {
+    width: 750px;
+    height: 250px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Estilização da DIV parte formulario*/
+.container_form {
+
+    border: 2px;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+    width: 40%;
+    height: 85%;
+    box-shadow: 0 15px 30px rgba(0, 0, 0);
+    backdrop-filter: blur(8px);
+}
+/*Estilização da Div das img's links sociais*/
+.links_sociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links_sociais img {
+    height: 30px;
+    margin: 20px;
+}
+
+
+input,
+textarea {
+    min-width: 320px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 1px solid #c1c1c1;
+    margin-top: 10px;
+    height: 30px;
+    padding-left: 10px;
+    outline-color: rgba(232, 92, 18, 1);
+}
+
+.tit_sub {
+    font-style: italic;
+    color: rgba(232, 92, 18, 1);
+    padding: 3%;
+
+}
+
+textarea {
+    height: 100px;
+    padding: 10px;
+}
+
+
+
+.button_enviar {
+    display: block;
+    margin: 10px auto;
+    height: 30px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    background: rgb(110, 55, 18);
+    background: linear-gradient(90deg, rgba(110, 55, 18, 1) 0%, rgba(164, 68, 16, 0.8664508039543942) 21%, rgba(232, 92, 18, 1) 100%);
+    cursor: pointer;
+    color: rgba(232, 92, 18, 1);
+
+}
+
+.button_enviar:hover {
+    opacity: 0.5;
+}
