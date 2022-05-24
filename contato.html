@@ -16,9 +16,9 @@
     <div class="container_ctt">
         <nav id="menu">
 
-            <button><a href="index.html"> ínicio</a></button>
-            <button><a href="perfil.html">Perfil</a></button>
-            <button><a href="contato.html">Contato</a></button>
+            <button class="lt_menu" onclick="window.location.href = 'index.html'">início</button>
+            <button class="lt_menu" onclick="window.location.href = 'perfil.html'">Perfil</button>
+            <button class="lt_menu" onclick="window.location.href = 'contato.html'">Contato</button>
 
 
         </nav>
@@ -46,16 +46,21 @@
 
             <form>
 
-                <input type="nome" name="nome" placeholder="Nome">
+                <input id="nome" type="nome" name="nome" onkeyup="validarNome()" placeholder="Nome">
+                <div id="txtNome"></div>
                 <br>
-                <input type="email" name="email" placeholder="E-mail">
+                <input id="email" type="email" name="email" onkeyup="validarEmail()" placeholder="E-mail">
+                <div id="txtEmail"></div>
                 <br>
-                <textarea name="mensagem" placeholder="Digite uma mensagem"></textarea>
+                <textarea id="mensagem" name="mensagem" onkeyup="validarAssunto()" placeholder="Digite uma mensagem"></textarea>
+                <div id="txtAssunto"></div>
                 <br>
                 <button class="button_enviar" type="enviar">Enviar</button>
 
             </form>
         </div>
     </div>
-
+    <script src="/assets/js/script.js"></script>
 </body>
+
+</html>
