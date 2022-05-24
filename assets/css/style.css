@@ -83,7 +83,7 @@
 /* Estiliza o botão quando o curso passa em cima*/
 
 
-a {
+.lt_menu {
     color: rgba(232, 92, 18, 1);
     text-decoration: none;
 }
@@ -104,6 +104,9 @@ button {
 
 button:hover {
     opacity: 0.5;
+}
+button:active{
+    opacity: 0.8;
 }
 
 
